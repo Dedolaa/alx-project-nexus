@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-s%$p!d3venipdhonfy5fmnfd4@$-6wu%9jk3tq-s$*s0gqd8_%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["alx-project-nexus-bm4i.onrender.com", "localhost", "127.0.0.1"]
 
 
 # Application definition
