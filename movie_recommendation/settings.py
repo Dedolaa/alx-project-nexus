@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-s%$p!d3venipdhonfy5fmnfd4@$-6wu%9jk3tq-s$*s0gqd8_%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["alx-project-nexus-bm4i.onrender.com", "localhost", "127.0.0.1"]
 
@@ -129,3 +129,10 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = "users.CustomUser"
 LOGIN_URL = "/users/login"
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://alx-project-nexus-bm4i.onrender.com',
+]
+
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
